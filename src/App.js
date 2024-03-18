@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.css';
-import MyHome from './Components/Home';
+
 import MyNavBar from './Components/Navbar';
-import MyLogin from './Components/Login';
+
+import { Form } from 'react-bootstrap';
+import MyForm from './Components/Form';
+import MyList from './Components/List';
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
 function App() {
@@ -11,8 +14,9 @@ function App() {
       <MyNavBar/>
       {/* Other routes/components go here */}
      <Routes>
-     <Route path="/home" element={<MyHome />} />
-     <Route path="/login" element={<MyLogin />} />
+   
+     <Route path="/form"   element={<MyForm/>}/>
+     <Route path ="/list"  element={<MyList/>}/>
      </Routes>
    
     </Router>

@@ -17,8 +17,9 @@ export default function MyNavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>handleNavigation('/home')}>Home</Nav.Link>
-            <Nav.Link onClick={()=>handleNavigation('/login')}>Login</Nav.Link>
+           
+            <Nav.Link onClick={()=>handleNavigation('/form')}>Form</Nav.Link>
+            <Nav.Link onClick={()=>handleNavigation('/list')}>List</Nav.Link>
            
           </Nav>
         </Navbar.Collapse>
